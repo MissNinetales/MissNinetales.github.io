@@ -178,16 +178,19 @@
 <h1 id="使用git发布到github"><a href="#使用git发布到github" class="headerlink" title="使用git发布到github"></a>使用git发布到github</h1><h3 id="建立github仓库"><a href="#建立github仓库" class="headerlink" title="建立github仓库"></a>建立github仓库</h3><p>在你的github里面建一个仓库。一定要是这种格式  your_name.github.io 例如我的就是MissNinetales.github.io</p>
 <h3 id="修改项目配置"><a href="#修改项目配置" class="headerlink" title="修改项目配置"></a>修改项目配置</h3><p>找到你的hexo项目的根目录下的_config.yml 文件，找打其中的deploy。修改如下：</p>
 <pre><code># Deployment
-## Docs: http://hexo.io/docs/deployment.html
 deploy:
 type: git
-repo: https://github.com/dwqs/dwqs.github.io.git
+repo: https://github.com/MissNinetales/MissNinetales.github.io.git
 branch: master
 </code></pre><h3 id="安装hexo-deployer-git用于发布"><a href="#安装hexo-deployer-git用于发布" class="headerlink" title="安装hexo-deployer-git用于发布"></a>安装hexo-deployer-git用于发布</h3><p>还是用之前的cmd或者 git bash 窗口执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git -S</div></pre></td></tr></table></figure></p>
 <h3 id="发布项目"><a href="#发布项目" class="headerlink" title="发布项目"></a>发布项目</h3><p>还是用之前的cmd或者 git bash 窗口执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
 <p>或者是</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
 <p>然后你就能在你的仓库看到你的项目了。如果需要访问，格式类似 <a href="https://missninetales.github.io/" target="_blank" rel="external">https://missninetales.github.io/</a>  把名字换成你自己的就ok了~</p>
+<h1 id="我还遇到的坑"><a href="#我还遇到的坑" class="headerlink" title="我还遇到的坑"></a>我还遇到的坑</h1><p>之后我在修改了内容之后执行hexo d 的时候出现了<br>fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘: Invalid argument<br>FATAL Something’s wrong. Maybe you can find the solution here: <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">http://hexo.io/docs/troubleshooting.html</a></p>
+<p>的问题，解决方案是找到项目文件夹中的.deploy_git文件夹中的. git文件夹中的config修改其中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">remote = https://github.com/MissNinetales/MissNinetales.github.io.git</div></pre></td></tr></table></figure></p>
+<p>为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">remote = https://&#123;username&#125;:&#123;password&#125;github.com/MissNinetales/MissNinetales.github.io.git</div></pre></td></tr></table></figure></p>
+<p>也就是告诉git你的用户名跟密码才能提交上去。。。</p>
 
       
 
