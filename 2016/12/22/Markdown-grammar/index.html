@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>徐丽的个人站</title>
+  <title>Markdown常用语法小结 | 徐丽的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is desc">
-<meta property="og:type" content="website">
-<meta property="og:title" content="徐丽的个人站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="标题设置（让字体变大，和word的标题意思一样）在Markdown当中设置标题，有两种方式：第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown常用语法小结">
+<meta property="og:url" content="http://yoursite.com/2016/12/22/Markdown-grammar/index.html">
 <meta property="og:site_name" content="徐丽的个人站">
-<meta property="og:description" content="this is desc">
+<meta property="og:description" content="标题设置（让字体变大，和word的标题意思一样）在Markdown当中设置标题，有两种方式：第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）">
+<meta property="og:updated_time" content="2016-12-22T09:19:32.544Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="徐丽的个人站">
-<meta name="twitter:description" content="this is desc">
+<meta name="twitter:title" content="Markdown常用语法小结">
+<meta name="twitter:description" content="标题设置（让字体变大，和word的标题意思一样）在Markdown当中设置标题，有两种方式：第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）">
   
   
     <link rel="icon" href="/favicon.png">
@@ -139,16 +140,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Markdown-grammar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Markdown-grammar" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/22/Markdown-grammar/">Markdown常用语法小结</a>
+    <h1 class="article-title" itemprop="name">
+      Markdown常用语法小结
     </h1>
   
 
@@ -162,11 +161,66 @@
         <ol>
 <li>标题设置（让字体变大，和word的标题意思一样）<br>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</li>
 </ol>
-        
-          <a class="article-more-a" href="/2016/12/22/Markdown-grammar/#more">more >></a>
-        
+<a id="more"></a>
+<ol>
+<li><p>块注释（blockquote）<br>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）</p>
+</li>
+<li><p>斜体<br>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来</p>
+</li>
+<li><p>粗体<br>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来</p>
+</li>
+<li><p>无序列表<br>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
+</li>
+<li><p>有序列表<br>使用数字后面跟上句号。（还要有空格）</p>
+</li>
+<li><p>链接（Links）<br>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：<br><code>This is an [example link](http://example.com/).</code><br>引用方式：<br><code>I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].</code></p>
+</li>
+</ol>
+<p><code>[1]: http://google.com/        &quot;Google&quot;</code><br><code>[2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;</code><br><code>[3]: http://search.msn.com/    &quot;MSN Search&quot;</code></p>
+<ol>
+<li><p>图片（Images）<br>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<br><code>![alt text](/path/to/img.jpg &quot;Title&quot;)</code><br>引用方式：<br><code>![alt text][id]</code><br><code>[id]: /path/to/img.jpg &quot;Title&quot;</code></p>
+</li>
+<li><p>代码（HTML中所谓的Code）<br>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
+</li>
+<li><p>脚注（footnote）<br>实现方式如下：<br><code>hello[^hello]</code><br><code>[^hello]: hi</code>    </p>
+</li>
+</ol>
+<ol>
+<li>下划线<br>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</li>
+</ol>
+<p>References： </p>
+<p>官方文档基本文档进行整理。<a href="http://daringfireball.net/projects/markdown/basics" target="_blank" rel="external">http://daringfireball.net/projects/markdown/basics</a><br>Markdown官方网站：<a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">http://daringfireball.net/projects/markdown/</a> </p>
+<p>推荐一款在线的Markdown编辑器：<a href="https://stackedit.io/" target="_blank" rel="external">https://stackedit.io/</a><br>另外还有一篇文章：<a href="http://www.jianshu.com/p/4Q3aay" target="_blank" rel="external">http://www.jianshu.com/p/4Q3aay</a></p>
+<p>原文链接：<a href="http://www.cnblogs.com/hnrainll/p/3514637.html" target="_blank" rel="external">http://www.cnblogs.com/hnrainll/p/3514637.html</a></p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>有人么~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -185,214 +239,81 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/22/Markdown-grammar/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/22/Markdown-grammar/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
-
-
-
   
-    <article id="post-js-closure" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/22/js-closure/">js: 闭包的幽默解释</a>
-    </h1>
-  
-
-        <a href="/2016/12/22/js-closure/" class="archive-article-date">
-  	<time datetime="2016-12-22T08:18:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="风趣的说法："><a href="#风趣的说法：" class="headerlink" title="风趣的说法："></a>风趣的说法：</h3><p>闭包，顾名思义，就是把馒头变成包子~<br>馒头全是面粉，包上馅就成了包子<br>包子是带馅的馒头<br>闭包是自带运行环境的函数<br>发哥是自带背景音乐的男人~<br>有童鞋不理解“自带运行环境”的含义~</p>
-        
-          <a class="article-more-a" href="/2016/12/22/js-closure/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闭包/">闭包</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/front-end/">front-end</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/22/js-closure/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-aboutGirls" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/22/aboutGirls/">知乎上的关于女生生活态度的一个答案</a>
-    </h1>
-  
-
-        <a href="/2016/12/22/aboutGirls/" class="archive-article-date">
-  	<time datetime="2016-12-22T06:32:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://oikxbrigw.bkt.clouddn.com/Lighthouse.jpg" alt="灯塔"></p>
-<p>(以上图文无关，仅仅为了测试图片功能O(∩_∩)O~)</p>
-<h3 id="今天在知乎是看到一个关于-的回答："><a href="#今天在知乎是看到一个关于-的回答：" class="headerlink" title="今天在知乎是看到一个关于  的回答："></a>今天在知乎是看到一个关于  的回答：</h3><p>本人女，今年大学毕业，坐标广州，视觉设计师，目前就职于一家互联网公司。<br>
-        
-          <a class="article-more-a" href="/2016/12/22/aboutGirls/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/女生/">女生</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/life/">life</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/22/aboutGirls/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/20/hexo-01/">怎样使用Hexo搭建一个静态博客</a>
-    </h1>
-  
-
-        <a href="/2016/12/20/hexo-01/" class="archive-article-date">
-  	<time datetime="2016-12-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-20</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>咳咳，激动得我想说一句，Hello World。<br>现在这个个人站就是我使用Hexo搭建的静态博客，并且部署到了github上面。通过github的域名进行访问。<br>下面我来写一下我具体是怎么操作的，以及遇到得一些坑吧~</p>
-<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>首先需要安装 node  git  客户端，可以去官网找这两个安装包然后下载下来，下一步下一步地安装。(我是用的windows)</p>
-<p>其次，你需要有个github账号。去官网注册一下就ok了。</p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>打开cmd 或者git bash<br>输入：</p>
-        
-          <a class="article-more-a" href="/2016/12/20/hexo-01/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/front-end/">front-end</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/12/20/hexo-01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
+<nav id="article-nav">
   
   
+    <a href="/2016/12/22/js-closure/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js: 闭包的幽默解释</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
 
 
           </div>
@@ -414,8 +335,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

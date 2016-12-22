@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 徐丽的个人站</title>
+  <title>js: 闭包的幽默解释 | 徐丽的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is desc">
-<meta property="og:type" content="website">
-<meta property="og:title" content="徐丽的个人站">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="风趣的说法：闭包，顾名思义，就是把馒头变成包子~馒头全是面粉，包上馅就成了包子包子是带馅的馒头闭包是自带运行环境的函数发哥是自带背景音乐的男人~有童鞋不理解“自带运行环境”的含义~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js: 闭包的幽默解释">
+<meta property="og:url" content="http://yoursite.com/2016/12/22/js-closure/index.html">
 <meta property="og:site_name" content="徐丽的个人站">
-<meta property="og:description" content="this is desc">
+<meta property="og:description" content="风趣的说法：闭包，顾名思义，就是把馒头变成包子~馒头全是面粉，包上馅就成了包子包子是带馅的馒头闭包是自带运行环境的函数发哥是自带背景音乐的男人~有童鞋不理解“自带运行环境”的含义~">
+<meta property="og:updated_time" content="2016-12-22T09:19:25.018Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="徐丽的个人站">
-<meta name="twitter:description" content="this is desc">
+<meta name="twitter:title" content="js: 闭包的幽默解释">
+<meta name="twitter:description" content="风趣的说法：闭包，顾名思义，就是把馒头变成包子~馒头全是面粉，包上馅就成了包子包子是带馅的馒头闭包是自带运行环境的函数发哥是自带背景音乐的男人~有童鞋不理解“自带运行环境”的含义~">
   
   
     <link rel="icon" href="/favicon.png">
@@ -139,170 +140,159 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-js-closure" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/22/Markdown-grammar/" class="archive-article-date">
-  	<time datetime="2016-12-22T08:40:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/22/Markdown-grammar/">Markdown常用语法小结</a>
+    <h1 class="article-title" itemprop="name">
+      js: 闭包的幽默解释
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/front-end/">front-end</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/22/js-closure/" class="archive-article-date">
+        <a href="/2016/12/22/js-closure/" class="archive-article-date">
   	<time datetime="2016-12-22T08:18:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/22/js-closure/">js: 闭包的幽默解释</a>
-    </h1>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="风趣的说法："><a href="#风趣的说法：" class="headerlink" title="风趣的说法："></a>风趣的说法：</h3><p>闭包，顾名思义，就是把馒头变成包子~<br>馒头全是面粉，包上馅就成了包子<br>包子是带馅的馒头<br>闭包是自带运行环境的函数<br>发哥是自带背景音乐的男人~<br>有童鞋不理解“自带运行环境”的含义~</p>
+<a id="more"></a>
+<p>再举例说一次吧~<br>码农们都吃过方便面吧~<br>它和普通面条有什么区别呢？<br>就是 自带调味包 。<br>调味包就是方便面的烹饪环境。<br>它简化了煮面条的流程。让用户不必练就厨艺也能吃上美味的内牛满面。<br>函数式编程的闭包，就是函数的调味包。<br>方便用户调用函数。不必为了维护繁杂的外部状态而烦恼。<br>例如python，就把闭包玩出了很多花样：<br>静态私有变量啦~<br>偏函数啦~<br>单参化~<br>装饰器~<br>……<br>当你在用这些功能的时候，其实就是在吃别人设定好调味包的“方便面”。</p>
+<h3 id="书面一点的说法："><a href="#书面一点的说法：" class="headerlink" title="书面一点的说法："></a>书面一点的说法：</h3><p>简单来说，闭包是指当函数被当成对象返回时，如果夹带了外部变量就形成了闭包。我非常赞同那位比喻把馒头加上馅变成包子的同学的回答，他虽是调侃成分居多，但理解的程度非常之深刻。<br>如果一个函数打包了外部变量，就可以给程序非常大的灵活性，你可以把闭包理解成轻量级的接口封装，虽然对外都是这个函数（调用方式不变），但是因为之中的变量不一样，就可以完成很多功能。这也就是那位同学说的自带运行环境的函数，自带背景音乐的男人，想想都可怕。<br>如果你想还深入了解一点，可以参考我总结的一篇文章，详解Python中的闭包，虽然编程语言不一样，但是道理是一样的。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>有人么~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闭包/">闭包</a></li></ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 	<i class="icon-book icon"></i>
 	<a class="article-category-link" href="/categories/front-end/">front-end</a>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/22/js-closure/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/22/aboutGirls/" class="archive-article-date">
-  	<time datetime="2016-12-22T06:32:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-22</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/22/aboutGirls/">知乎上的关于女生生活态度的一个答案</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/女生/">女生</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/life/">life</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/12/20/hexo-01/" class="archive-article-date">
-  	<time datetime="2016-12-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/20/hexo-01/">怎样使用Hexo搭建一个静态博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<i class="icon-book icon"></i>
-	<a class="article-category-link" href="/categories/front-end/">front-end</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+    <a href="/2016/12/22/Markdown-grammar/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Markdown常用语法小结
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2016/12/22/aboutGirls/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">知乎上的关于女生生活态度的一个答案</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
+</nav>
 
-    
+
+
+
+
+
+
 
 
           </div>
@@ -325,8 +315,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
